@@ -1,0 +1,86 @@
+body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f4f9fd; color: #333; }
+
+.general{
+    display: flex;
+      align-items: center;
+     justify-content: center;
+      padding-top: 20px;
+    background: linear-gradient(to right, #ffffff, #00c6ff);
+}
+.izquierda{
+    display: flex; flex-direction: column;
+    width: 25%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.izquierda img{
+    width: 60%;
+    height: auto;
+}
+
+.centro{
+    width: 50%;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+.btn {
+  background: transparent;
+  border: none;
+  color: #0077cc;
+  font: 600 1rem 'Segoe UI', sans-serif;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: rgba(0, 119, 204, 0.1); 
+  transform: translateY(1px); 
+}
+
+.btn:active {
+  transform: translateY(2px);
+  background-color: rgba(0, 119, 204, 0.2);
+}
+.derecha{
+    display: flex;flex-direction: column;
+align-items: center;
+     justify-content: center;
+}
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  font: 600 1rem 'Segoe UI', sans-serif;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebc5c;
+  transform: translateY(1px);
+}
+
+.btn-whatsapp:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-whatsapp i {
+  font-size: 1.2em;
+}
+
+
