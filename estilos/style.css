@@ -82,5 +82,65 @@ align-items: center;
 .btn-whatsapp i {
   font-size: 1.2em;
 }
+ .quienes-somos {
+  padding: 60px 20px;
+  background: #f4f9fd;
+  text-align: center;
+}
+
+.quienes-somos h2 {
+  color: #0077cc;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.quienes-somos p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: auto;
+  color: #333;
+}
+
+.bloques-mv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.bloque {
+    background: linear-gradient(to right,  #00c6ff , #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 30px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.bloque h3 {
+  color: #00a16d;
+  margin-bottom: 10px;
+}
+.bloque-claro {
+  padding: 60px 20px;
+  background: #f4f9fd;
+  text-align: center;
+}
+
+.bloque-claro h2 {
+  color: #0077cc;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.bloque-claro p {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 10px auto;
+  color: #333;
+  line-height: 1.6;
+}
+
 
 
