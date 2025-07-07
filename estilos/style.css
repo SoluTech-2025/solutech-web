@@ -1,31 +1,41 @@
-body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f4f9fd; color: #333; }
-
-.general{
-    display: flex;
-      align-items: center;
-     justify-content: center;
-      padding-top: 20px;
-    background: linear-gradient(to right, #ffffff, #00c6ff);
-}
-.izquierda{
-    display: flex; flex-direction: column;
-    width: 25%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-}
-.izquierda img{
-    width: 60%;
-    height: auto;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f9fd;
+  color: #333;
 }
 
-.centro{
-    width: 50%;
-    display: flex;
-     align-items: center;
-     justify-content: center;
+.general {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  background: linear-gradient(to right, #ffffff, #00c6ff);
+}
+
+.izquierda {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.izquierda img {
+  width: 60%;
+  height: auto;
+}
+
+.centro {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 
 }
+
 .btn {
   background: transparent;
   border: none;
@@ -40,19 +50,24 @@ body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f4f9fd; colo
 }
 
 .btn:hover {
-  background-color: rgba(0, 119, 204, 0.1); 
-  transform: translateY(1px); 
+  background-color: rgba(0, 119, 204, 0.1);
+  transform: translateY(1px);
 }
 
 .btn:active {
   transform: translateY(2px);
   background-color: rgba(0, 119, 204, 0.2);
 }
-.derecha{
-    display: flex;flex-direction: column;
-align-items: center;
-     justify-content: center;
+
+.derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 5px;
 }
+
 .btn-whatsapp {
   background-color: #25D366;
   color: white;
@@ -82,7 +97,8 @@ align-items: center;
 .btn-whatsapp i {
   font-size: 1.2em;
 }
- .quienes-somos {
+
+.quienes-somos {
   padding: 60px 20px;
   background: #f4f9fd;
   text-align: center;
@@ -110,9 +126,9 @@ align-items: center;
 }
 
 .bloque {
-    background: linear-gradient(to right,  #00c6ff , #ffffff);
+  background: linear-gradient(to right, #00c6ff, #ffffff);
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 30px;
   max-width: 400px;
   text-align: left;
@@ -122,6 +138,7 @@ align-items: center;
   color: #00a16d;
   margin-bottom: 10px;
 }
+
 .bloque-claro {
   padding: 60px 20px;
   background: #f4f9fd;
@@ -142,5 +159,98 @@ align-items: center;
   line-height: 1.6;
 }
 
+/* Footer */
+footer {
+  background: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
 
+/* ----------------- RESPONSIVE DESIGN ----------------- */
 
+/* General: adaptar el layout general a pantallas pequeñas */
+@media (max-width: 768px) {
+  .general {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .izquierda,
+  .centro,
+  .derecha {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .centro {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .boton1 {
+    margin: 5px 0;
+  }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas (teléfonos) */
+@media (max-width: 480px) {
+
+  .btn,
+  .btn-whatsapp {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .bloques-mv {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bloque {
+    width: 90%;
+    max-width: none;
+  }
+
+  .quienes-somos h2,
+  .bloque-claro h2 {
+    font-size: 1.5em;
+  }
+
+  .quienes-somos p,
+  .bloque-claro p {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+}
+
+/* Evitar solapamiento entre 775px y 957px */
+@media (max-width: 980px) and (min-width: 770px) {
+  .general {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .izquierda, .centro, .derecha {
+    width: 90%; /* o 100% si prefieres full width */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .centro {
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .boton1 {
+    flex: 0 0 auto;
+  }
+}
